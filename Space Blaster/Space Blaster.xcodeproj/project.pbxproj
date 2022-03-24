@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		181A3BC025372DB800B1D602 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A3BBF25372DB800B1D602 /* AppDelegate.swift */; };
+		181A3BC225372DB800B1D602 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 181A3BC125372DB800B1D602 /* GameScene.sks */; };
+		181A3BC425372DB800B1D602 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 181A3BC325372DB800B1D602 /* Actions.sks */; };
+		181A3BC625372DB800B1D602 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A3BC525372DB800B1D602 /* GameScene.swift */; };
+		181A3BC825372DB800B1D602 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A3BC725372DB800B1D602 /* GameViewController.swift */; };
+		181A3BCB25372DB800B1D602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181A3BC925372DB800B1D602 /* Main.storyboard */; };
+		181A3BCD25372DB900B1D602 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181A3BCC25372DB900B1D602 /* Assets.xcassets */; };
+		181A3C022537394500B1D602 /* FireSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 181A3C012537394500B1D602 /* FireSound.m4a */; };
+		187ADA4A25389B2F0079745D /* ExplosionSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 187ADA4925389B2F0079745D /* ExplosionSound.m4a */; };
+		187ADA4F2538F7070079745D /* theBoldFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 187ADA4E2538F7070079745D /* theBoldFont.ttf */; };
+		187ADA54253901520079745D /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187ADA53253901520079745D /* GameOverScene.swift */; };
+		1890EB752545BDA4008DEBF1 /* RestartButtonClickSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1890EB742545BDA4008DEBF1 /* RestartButtonClickSound.m4a */; };
+		1890EB802545D500008DEBF1 /* StartMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1890EB7F2545D500008DEBF1 /* StartMenuViewController.swift */; };
+		1890EBAE2545DF50008DEBF1 /* magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1890EBAD2545DF50008DEBF1 /* magic.sks */; };
+		1890EBB32545E0D1008DEBF1 /* spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1890EBB22545E0D1008DEBF1 /* spark.sks */; };
+		1890EBC02545E20F008DEBF1 /* highscore.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1890EBBF2545E20F008DEBF1 /* highscore.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		181A3BD425372DB900B1D602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 181A3BB425372DB800B1D602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 181A3BBB25372DB800B1D602;
+			remoteInfo = "Space Blaster";
+		};
+		181A3BDF25372DB900B1D602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 181A3BB425372DB800B1D602 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 181A3BBB25372DB800B1D602;
+			remoteInfo = "Space Blaster";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		181A3BBC25372DB800B1D602 /* Space Blaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Blaster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		181A3BBF25372DB800B1D602 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		181A3BC125372DB800B1D602 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		181A3BC325372DB800B1D602 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		181A3BC525372DB800B1D602 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		181A3BC725372DB800B1D602 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		181A3BCA25372DB800B1D602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		181A3BCC25372DB900B1D602 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		181A3BCE25372DB900B1D602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181A3BD325372DB900B1D602 /* Space BlasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space BlasterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		181A3BDE25372DB900B1D602 /* Space BlasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space BlasterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		181A3C012537394500B1D602 /* FireSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = FireSound.m4a; sourceTree = "<group>"; };
+		187ADA4925389B2F0079745D /* ExplosionSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ExplosionSound.m4a; sourceTree = "<group>"; };
+		187ADA4E2538F7070079745D /* theBoldFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = theBoldFont.ttf; sourceTree = "<group>"; };
+		187ADA53253901520079745D /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		1890EB742545BDA4008DEBF1 /* RestartButtonClickSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = RestartButtonClickSound.m4a; sourceTree = "<group>"; };
+		1890EB7F2545D500008DEBF1 /* StartMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMenuViewController.swift; sourceTree = "<group>"; };
+		1890EBAD2545DF50008DEBF1 /* magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = magic.sks; sourceTree = "<group>"; };
+		1890EBB22545E0D1008DEBF1 /* spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = spark.sks; sourceTree = "<group>"; };
+		1890EBBF2545E20F008DEBF1 /* highscore.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = highscore.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		181A3BB925372DB800B1D602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		181A3BD025372DB900B1D602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		181A3BDB25372DB900B1D602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		181A3BB325372DB800B1D602 = {
+			isa = PBXGroup;
+			children = (
+				181A3BBE25372DB800B1D602 /* Space Blaster */,
+				181A3BBD25372DB800B1D602 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		181A3BBD25372DB800B1D602 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				181A3BBC25372DB800B1D602 /* Space Blaster.app */,
+				181A3BD325372DB900B1D602 /* Space BlasterTests.xctest */,
+				181A3BDE25372DB900B1D602 /* Space BlasterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		181A3BBE25372DB800B1D602 /* Space Blaster */ = {
+			isa = PBXGroup;
+			children = (
+				181A3BBF25372DB800B1D602 /* AppDelegate.swift */,
+				181A3BC125372DB800B1D602 /* GameScene.sks */,
+				1890EBB22545E0D1008DEBF1 /* spark.sks */,
+				181A3BC525372DB800B1D602 /* GameScene.swift */,
+				181A3BC725372DB800B1D602 /* GameViewController.swift */,
+				187ADA53253901520079745D /* GameOverScene.swift */,
+				1890EB7F2545D500008DEBF1 /* StartMenuViewController.swift */,
+				187ADA4E2538F7070079745D /* theBoldFont.ttf */,
+				181A3C012537394500B1D602 /* FireSound.m4a */,
+				187ADA4925389B2F0079745D /* ExplosionSound.m4a */,
+				1890EB742545BDA4008DEBF1 /* RestartButtonClickSound.m4a */,
+				181A3BC925372DB800B1D602 /* Main.storyboard */,
+				181A3BCC25372DB900B1D602 /* Assets.xcassets */,
+				181A3BCE25372DB900B1D602 /* Info.plist */,
+				181A3BC325372DB800B1D602 /* Actions.sks */,
+				1890EBAD2545DF50008DEBF1 /* magic.sks */,
+				1890EBBF2545E20F008DEBF1 /* highscore.sks */,
+			);
+			path = "Space Blaster";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		181A3BBB25372DB800B1D602 /* Space Blaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 181A3BE725372DB900B1D602 /* Build configuration list for PBXNativeTarget "Space Blaster" */;
+			buildPhases = (
+				181A3BB825372DB800B1D602 /* Sources */,
+				181A3BB925372DB800B1D602 /* Frameworks */,
+				181A3BBA25372DB800B1D602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Space Blaster";
+			productName = "Space Blaster";
+			productReference = 181A3BBC25372DB800B1D602 /* Space Blaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		181A3BD225372DB900B1D602 /* Space BlasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 181A3BEA25372DB900B1D602 /* Build configuration list for PBXNativeTarget "Space BlasterTests" */;
+			buildPhases = (
+				181A3BCF25372DB900B1D602 /* Sources */,
+				181A3BD025372DB900B1D602 /* Frameworks */,
+				181A3BD125372DB900B1D602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				181A3BD525372DB900B1D602 /* PBXTargetDependency */,
+			);
+			name = "Space BlasterTests";
+			productName = "Space BlasterTests";
+			productReference = 181A3BD325372DB900B1D602 /* Space BlasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		181A3BDD25372DB900B1D602 /* Space BlasterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 181A3BED25372DB900B1D602 /* Build configuration list for PBXNativeTarget "Space BlasterUITests" */;
+			buildPhases = (
+				181A3BDA25372DB900B1D602 /* Sources */,
+				181A3BDB25372DB900B1D602 /* Frameworks */,
+				181A3BDC25372DB900B1D602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				181A3BE025372DB900B1D602 /* PBXTargetDependency */,
+			);
+			name = "Space BlasterUITests";
+			productName = "Space BlasterUITests";
+			productReference = 181A3BDE25372DB900B1D602 /* Space BlasterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		181A3BB425372DB800B1D602 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					181A3BBB25372DB800B1D602 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					181A3BD225372DB900B1D602 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 181A3BBB25372DB800B1D602;
+					};
+					181A3BDD25372DB900B1D602 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 181A3BBB25372DB800B1D602;
+					};
+				};
+			};
+			buildConfigurationList = 181A3BB725372DB800B1D602 /* Build configuration list for PBXProject "Space Blaster" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 181A3BB325372DB800B1D602;
+			productRefGroup = 181A3BBD25372DB800B1D602 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				181A3BBB25372DB800B1D602 /* Space Blaster */,
+				181A3BD225372DB900B1D602 /* Space BlasterTests */,
+				181A3BDD25372DB900B1D602 /* Space BlasterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		181A3BBA25372DB800B1D602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1890EBAE2545DF50008DEBF1 /* magic.sks in Resources */,
+				187ADA4A25389B2F0079745D /* ExplosionSound.m4a in Resources */,
+				187ADA4F2538F7070079745D /* theBoldFont.ttf in Resources */,
+				181A3BCB25372DB800B1D602 /* Main.storyboard in Resources */,
+				181A3BC225372DB800B1D602 /* GameScene.sks in Resources */,
+				1890EBC02545E20F008DEBF1 /* highscore.sks in Resources */,
+				181A3BCD25372DB900B1D602 /* Assets.xcassets in Resources */,
+				181A3BC425372DB800B1D602 /* Actions.sks in Resources */,
+				181A3C022537394500B1D602 /* FireSound.m4a in Resources */,
+				1890EB752545BDA4008DEBF1 /* RestartButtonClickSound.m4a in Resources */,
+				1890EBB32545E0D1008DEBF1 /* spark.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		181A3BD125372DB900B1D602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		181A3BDC25372DB900B1D602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		181A3BB825372DB800B1D602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181A3BC625372DB800B1D602 /* GameScene.swift in Sources */,
+				181A3BC825372DB800B1D602 /* GameViewController.swift in Sources */,
+				187ADA54253901520079745D /* GameOverScene.swift in Sources */,
+				181A3BC025372DB800B1D602 /* AppDelegate.swift in Sources */,
+				1890EB802545D500008DEBF1 /* StartMenuViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		181A3BCF25372DB900B1D602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		181A3BDA25372DB900B1D602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		181A3BD525372DB900B1D602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 181A3BBB25372DB800B1D602 /* Space Blaster */;
+			targetProxy = 181A3BD425372DB900B1D602 /* PBXContainerItemProxy */;
+		};
+		181A3BE025372DB900B1D602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 181A3BBB25372DB800B1D602 /* Space Blaster */;
+			targetProxy = 181A3BDF25372DB900B1D602 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		181A3BC925372DB800B1D602 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				181A3BCA25372DB800B1D602 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		181A3BE525372DB900B1D602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		181A3BE625372DB900B1D602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		181A3BE825372DB900B1D602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QEGAMCA563;
+				INFOPLIST_FILE = "Space Blaster/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.armer.Space-Blaster";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		181A3BE925372DB900B1D602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QEGAMCA563;
+				INFOPLIST_FILE = "Space Blaster/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.armer.Space-Blaster";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		181A3BEB25372DB900B1D602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QEGAMCA563;
+				INFOPLIST_FILE = "Space BlasterTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.armer.Space-BlasterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space Blaster.app/Space Blaster";
+			};
+			name = Debug;
+		};
+		181A3BEC25372DB900B1D602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QEGAMCA563;
+				INFOPLIST_FILE = "Space BlasterTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.armer.Space-BlasterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space Blaster.app/Space Blaster";
+			};
+			name = Release;
+		};
+		181A3BEE25372DB900B1D602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QEGAMCA563;
+				INFOPLIST_FILE = "Space BlasterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.armer.Space-BlasterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Space Blaster";
+			};
+			name = Debug;
+		};
+		181A3BEF25372DB900B1D602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QEGAMCA563;
+				INFOPLIST_FILE = "Space BlasterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.james.armer.Space-BlasterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Space Blaster";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		181A3BB725372DB800B1D602 /* Build configuration list for PBXProject "Space Blaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181A3BE525372DB900B1D602 /* Debug */,
+				181A3BE625372DB900B1D602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		181A3BE725372DB900B1D602 /* Build configuration list for PBXNativeTarget "Space Blaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181A3BE825372DB900B1D602 /* Debug */,
+				181A3BE925372DB900B1D602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		181A3BEA25372DB900B1D602 /* Build configuration list for PBXNativeTarget "Space BlasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181A3BEB25372DB900B1D602 /* Debug */,
+				181A3BEC25372DB900B1D602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		181A3BED25372DB900B1D602 /* Build configuration list for PBXNativeTarget "Space BlasterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181A3BEE25372DB900B1D602 /* Debug */,
+				181A3BEF25372DB900B1D602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 181A3BB425372DB800B1D602 /* Project object */;
+}
